@@ -18,7 +18,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: var(--primary-bg-color);
-    height: 7vh;
+    height: 60px;
 }
 
 #heading-elements{
@@ -36,7 +36,7 @@ body{
 #head-name{
     color: var(--secondary-font-color);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: var(--font1);
 }
 
@@ -55,6 +55,6 @@ body{
     text-decoration: none;
     color: var(--secondary-font-color);
     font-family: var(--font1);
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: bold;
 }
