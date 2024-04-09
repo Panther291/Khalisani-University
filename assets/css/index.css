@@ -68,6 +68,12 @@ body{
     font-family: var(--font1);
     font-size: 1.15rem;
     font-weight: bold;
+    transition: all 0.4s;
+}
+
+#heading-ul li a:hover{
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-font-color);
 }
 
 /* ------------ Navigation Bar Section ------------ */
