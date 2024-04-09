@@ -128,6 +128,7 @@ nav ul li a:hover{
     backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
+    text-shadow: 0 0 25px var(--secondary-font-color);
 }
 
 /* ------------ University Description Section ------------ */
