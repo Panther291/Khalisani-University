@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --primary-bg-color: #8EE600;
     --primary-font-color: #8EE600;
     --secondary-font-color: #ffffff;
     --secondary-bg-color: #ffffff;
+    --secondary-border-color: #ffff00df;
     --colored-bg: #8ee6001c;
     --white-bg: #ffffff1;
     --font1: arial;
@@ -17,50 +18,50 @@
 
 
 
-body{
+body {
     min-height: 1000vh;
 }
 
-.colored-bg{
+.colored-bg {
     background-color: var(--colored-bg);
 }
 
 /* ------------ Heading Section ------------ */
 
-#heading{
+#heading {
     display: flex;
     justify-content: center;
     background-color: var(--primary-bg-color);
     height: 60px;
 }
 
-#heading-elements{
+#heading-elements {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 95%;
 }
 
-.fa-solid fa-building-columns{
+.fa-solid fa-building-columns {
     color: var(--secondary-font-color);
 }
 
-#head-name{
+#head-name {
     color: var(--secondary-font-color);
     font-weight: bold;
     font-size: 1.7rem;
     font-family: var(--font1);
 }
 
-#heading-ul{
+#heading-ul {
     display: flex;
 }
 
-#heading-ul li{
+#heading-ul li {
     margin: 0 5px;
 }
 
-#heading-ul li a{
+#heading-ul li a {
     padding: 7px 10px;
     border-radius: 12px;
     text-decoration: none;
@@ -71,30 +72,32 @@ body{
     transition: all 0.4s;
 }
 
-#heading-ul li a:hover{
+#heading-ul li a:hover {
     background-color: var(--secondary-bg-color);
     color: var(--primary-font-color);
 }
 
 /* ------------ Navigation Bar Section ------------ */
 
-nav{
+nav {
     position: sticky;
     top: 0;
-    border-bottom: 3px solid var(--primary-bg-color);
+    border-bottom: 5px solid var(--secondary-border-color);
+    border-top: 5px solid var(--secondary-border-color);
     z-index: 100;
+    box-shadow: -1px 7px 25px #0000009a;
 }
 
-nav ul{
+nav ul {
     display: flex;
     background-color: var(--secondary-bg-color);
 }
 
-nav ul li{
+nav ul li {
     padding: 15px 8px;
 }
 
-nav ul li a{
+nav ul li a {
     font-family: var(--font1);
     font-weight: bolder;
     color: var(--primary-font-color);
@@ -104,20 +107,20 @@ nav ul li a{
     transition: all 0.4s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: var(--primary-bg-color);
     color: var(--secondary-font-color);
 }
 
 /* ------------ Main Image Section ------------ */
 
-#main-img{
+#main-img {
     height: 75vh;
     background: url(../img/main.jpeg) no-repeat center center/cover;
     border-bottom: 3px solid var(--primary-bg-color);
 }
 
-#main-img-name{
+#main-img-name {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +136,7 @@ nav ul li a:hover{
 
 /* ------------ University Description Section ------------ */
 
-#uni-desc-heading{
+#uni-desc-heading {
     text-align: center;
     font-size: 2.5rem;
     padding: 50px 0;
@@ -142,9 +145,121 @@ nav ul li a:hover{
     font-weight: 600;
 }
 
-#uni-desc{
+#uni-desc {
     font-size: 1.5rem;
     font-family: var(--font1);
     padding: 0 50px 50px;
     text-align: center;
+}
+
+/* ------------ Chancellor Section ------------ */
+
+#chancellor-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vh 0;
+}
+
+#chancellor-img {
+    height: 28vh;
+    aspect-ratio: 1/1;
+    border: 2px solid var(--primary-font-color);
+    border-radius: 50%;
+    background: url(../img/chancellor.jpg) no-repeat center center/cover;
+}
+
+#chancellor-desc {
+    width: 75%;
+    font-size: 1.8rem;
+    font-family: var(--font1);
+    text-align: center;
+    color: var(--primary-font-color);
+}
+
+#chancellor {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: end;
+    color: black;
+    margin-top: 15px;
+}
+
+#chancellor-name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ------------ Courses We Provide Section ------------ */
+
+#courses-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 60px 0;
+    font-family: var(--font1);
+    color: var(--primary-font-color);
+    font-weight: 600;
+}
+
+#courses-main {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 0.5rem;
+    padding: 0 50px 4vh;
+}
+
+#courses-main a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-weight: 600;
+    /* transition: all 0.7s; */
+}
+
+.courses:hover {
+    transition: all 0.4s;
+    box-shadow: inset 0px 0px 20px 2px var(--primary-bg-color);
+}
+
+.courses {
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.55rem;
+    font-family: var(--font1);
+
+}
+
+.courses {
+    transition: all 0.4s;
+    box-shadow: inset 0px 0px 10px transparent;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.seemore-bttn {
+    text-align: center;
+    padding-bottom: 23px;
+}
+
+.seemore-bttn a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+    padding: 12px 25px;
+    padding: 12px 25px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    font-family: var(--font1);
+    border: 2px solid var(--primary-font-color);
+    transition: all 0.4s;
+}
+
+.seemore-bttn a:hover{
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-font-color);
 }
