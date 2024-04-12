@@ -82,8 +82,8 @@ body {
 nav {
     position: sticky;
     top: 0;
-    border-bottom: 5px solid var(--secondary-border-color);
-    border-top: 5px solid var(--secondary-border-color);
+    /* border-bottom: 5px solid var(--secondary-border-color);
+    border-top: 5px solid var(--secondary-border-color); */
     z-index: 100;
     box-shadow: -1px 7px 25px #0000009a;
 }
