@@ -205,7 +205,6 @@ nav ul li a:hover {
     height: 80vh;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    gap: 0.5rem;
     padding: 0 50px 4vh;
 }
 
@@ -230,14 +229,9 @@ nav ul li a:hover {
     align-items: center;
     font-size: 1.55rem;
     font-family: var(--font1);
-
-}
-
-.courses {
     transition: all 0.4s;
     box-shadow: inset 0px 0px 10px transparent;
 }
-
 .white-bg {
     background-color: white;
 }
