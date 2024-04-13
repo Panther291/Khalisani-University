@@ -14,6 +14,7 @@
     --colored-bg: #f4ffe3;
     --white-bg: #ffffff1;
     --font1: arial;
+    --font-color3: #b5d383;
 }
 
 html{
@@ -271,6 +272,7 @@ nav ul li a:hover {
     color: var(--secondary-font-color);
 }
 
+/* ------------ Highlights Section ------------ */
 
 .highlights-section{
     background-color: var(--secondary-bg-color);
@@ -282,8 +284,9 @@ nav ul li a:hover {
 #highlights-main {
     height: 50vh;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(6, 17%);
     padding: 0 50px 4vh;
+    padding-bottom: 50px;
 }
 
 .highlights{
@@ -291,6 +294,7 @@ nav ul li a:hover {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.55rem;
@@ -302,4 +306,63 @@ nav ul li a:hover {
 
 .white-bg {
     background-color: white;
+}
+
+.highlights-main{
+    font-size: 2.5rem;
+    color: var(--primary-font-color);
+    font-family: var(--font1);
+    margin: 5px;
+}
+
+.highlight-desc{
+    font-size: 1.2rem;
+    color: var(--font-color3);
+    text-align: center;
+}
+
+/* ------------ Student's Comment Section ------------ */
+
+#std-cmmnt-main{
+    height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 0 50px 4vh;
+    gap: 25px;
+    padding-bottom: 50px;
+    font-family: var(--font1);
+}
+
+.std-cmmnt{
+    /* border: 2px solid black; */
+    display: flex;
+    border-radius: 15px;
+}
+
+.std-img{
+    background: url(../img/main.jpeg) no-repeat center center/cover;
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.cmmnt{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.std-name{
+    margin: 10px;
+    color: var(--primary-font-color);
+}
+
+.cmmnt-desc{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--font-color3);
+    /* font-size: 1.2rem; */
+    margin: 15px 2px;
 }
