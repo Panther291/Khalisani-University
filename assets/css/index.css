@@ -11,12 +11,14 @@
     --secondary-font-color: #ffffff;
     --secondary-bg-color: #ffffff;
     --secondary-border-color: #ffff00df;
-    --colored-bg: #8ee6001c;
+    --colored-bg: #f4ffe3;
     --white-bg: #ffffff1;
     --font1: arial;
 }
 
-
+html{
+    background-color: var(--secondary-bg-color);
+}
 
 body {
     min-height: 1000vh;
@@ -24,6 +26,15 @@ body {
 
 .colored-bg {
     background-color: var(--colored-bg);
+}
+
+.cont-headings {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 60px 0;
+    font-family: var(--font1);
+    color: var(--primary-font-color);
+    font-weight: 600;
 }
 
 /* ------------ Heading Section ------------ */
@@ -117,7 +128,9 @@ nav ul li a:hover {
 #main-img {
     height: 75vh;
     background: url(../img/main.jpeg) no-repeat center center/cover;
-    border-bottom: 3px solid var(--primary-bg-color);
+    position: sticky;
+    top: 0;
+    z-index: -100;
 }
 
 #main-img-name {
@@ -135,7 +148,12 @@ nav ul li a:hover {
 }
 
 /* ------------ University Description Section ------------ */
-
+.uni-desc{
+    border-top: 3px solid var(--primary-bg-color);
+    position: sticky;
+    top: 0;
+    z-index: -99;
+}
 #uni-desc-heading {
     text-align: center;
     font-size: 2.5rem;
@@ -150,6 +168,7 @@ nav ul li a:hover {
     font-family: var(--font1);
     padding: 0 50px 50px;
     text-align: center;
+
 }
 
 /* ------------ Chancellor Section ------------ */
@@ -158,7 +177,13 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 3vh 0;
+    /* margin: 3vh 0; */
+    height: 37vh;
+    background-color: var(--secondary-bg-color);
+    /* border-top: 3px solid var(--primary-bg-color); */
+    position: sticky;
+    top: 0;
+    z-index: -98;
 }
 
 #chancellor-img {
@@ -192,15 +217,6 @@ nav ul li a:hover {
 
 /* ------------ Courses We Provide Section ------------ */
 
-#courses-heading {
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 60px 0;
-    font-family: var(--font1);
-    color: var(--primary-font-color);
-    font-weight: 600;
-}
-
 #courses-main {
     height: 80vh;
     display: grid;
@@ -232,9 +248,6 @@ nav ul li a:hover {
     transition: all 0.4s;
     box-shadow: inset 0px 0px 10px transparent;
 }
-.white-bg {
-    background-color: white;
-}
 
 .seemore-bttn {
     text-align: center;
@@ -256,4 +269,37 @@ nav ul li a:hover {
 .seemore-bttn a:hover{
     background-color: var(--primary-bg-color);
     color: var(--secondary-font-color);
+}
+
+
+.highlights-section{
+    background-color: var(--secondary-bg-color);
+    /* position: sticky;
+    top: 0;
+    z-index: -96; */
+}
+
+#highlights-main {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    padding: 0 50px 4vh;
+}
+
+.highlights{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.55rem;
+    font-family: var(--font1);
+    background-color: var(--colored-bg);
+    transition: all 0.4s;
+    box-shadow: inset 0px 0px 10px transparent;
+}
+
+.white-bg {
+    background-color: white;
 }
