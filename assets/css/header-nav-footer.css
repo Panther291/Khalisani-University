@@ -131,7 +131,7 @@ nav ul li a:hover {
 /* --------- Footer Section --------- */
 
 footer{
-    height: 15vh;
+    height: 10vh;
     background-color: var(--primary-font-color);
     display: flex;
     align-items: center;
