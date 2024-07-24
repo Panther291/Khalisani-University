@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-bg-color: #8EE600;
+    --primary-bg-color: #8ee600;
     --primary-font-color: #8EE600;
     --secondary-font-color: #ffffff;
     --secondary-bg-color: #ffffff;
@@ -49,6 +49,7 @@ body {
     justify-content: center;
     background-color: var(--primary-bg-color);
     height: 60px;
+    z-index: 100000;
 }
 
 #heading-elements {
@@ -65,7 +66,7 @@ body {
 #head-name {
     color: var(--secondary-font-color);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: clamp(1.5rem, 2vw, 1.7rem);
     font-family: var(--font1);
 }
 
@@ -83,7 +84,6 @@ body {
     text-decoration: none;
     color: var(--secondary-font-color);
     font-family: var(--font1);
-    font-size: 1.15rem;
     font-weight: bold;
     transition: all 0.4s;
 }
@@ -201,14 +201,15 @@ nav ul li a:hover {
 
 #chancellor-desc {
     width: 75%;
-    font-size: 1.8rem;
+    font-size: clamp(0.8rem, 2vw, 1.8rem);
     font-family: var(--font1);
     text-align: center;
     color: var(--primary-font-color);
+    padding: 30px 0;
 }
 
 #chancellor {
-    font-size: 1.2rem;
+    font-size: clamp(0.6rem, 2vw, 1.2rem);
     display: flex;
     justify-content: end;
     color: black;
@@ -327,73 +328,129 @@ nav ul li a:hover {
 
 /* ------------ Student's Comment Section ------------ */
 
-.cmmnt-main{
-    height: 25vh;
+.std-cmmnt-section{
+    /* background-color: var(--colored-bg); */
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#std-cmmnt-main{
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    padding: 0 50px 4vh;
-    gap: 25px;
+    grid-template-columns: repeat(2, 40%);
+    /* padding: 0 50px; */
+    gap: 5vw;
     padding-bottom: 50px;
+    width: 90%;
+    justify-content: center;
+}
+
+.std-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+.std-desc{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    font-size: 1.3rem;
     font-family: var(--font1);
 }
 
-.cmmnts{
-    border: 2px solid var(--primary-font-color);
+.std-names{
+    margin: 10% 0;
     display: flex;
-    border-radius: 15px;
-}
-
-.img{
-    background: url(../img/main.jpeg) no-repeat center center/cover;
-    height: 90%;
-    width: 50%;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-.cmmnt{
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-
-.name{
-    margin: 10px;
-    color: var(--primary-font-color);
+    justify-content: end;
+    color: var(--primary-bg-color);
     font-weight: bold;
 }
 
-.cmmnt-desc{
-    font-size: 1rem;
-    color: var(--font-color3);
-    /* font-size: 1.2rem; */
-    margin: 15px 2px;
+/* ------------ Teachers' Comment Section ------------ */
+
+.teacher-cmmnt-section{
+    /* background-color: var(--white-colored-bg); */
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#std1-img{
+#teacher-cmmnt-main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    /* padding: 0 50px; */
+    gap: 5vw;
+    padding-bottom: 50px;
+    width: 90%;
+    justify-content: center;
+}
+
+.cmmnt-cont{
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--colored-bg); */
+    border-radius: 5%;
+    display: flex;
+    min-height: 30vh;
+}
+
+.teacher-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+}
+.teacher-desc{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    font-size: 1.3rem;
+    font-family: var(--font1);
+}
+
+.teacher-names{
+    margin: 10% 0;
+    display: flex;
+    justify-content: end;
+    color: var(--primary-bg-color);
+    font-weight: bold;
+}
+
+#std1{
     background: url(../img/std1.jpg) no-repeat center center/cover;
 }
-#std2-img{
+#std2{
     background: url(../img/std2.jpg) no-repeat center center/cover;
 }
-#std3-img{
+#std3{
     background: url(../img/std3.jpg) no-repeat center center/cover;
 }
-#std4-img{
+#std4{
     background: url(../img/std4.jpg) no-repeat center center/cover;
 }
 
-#tcr1-img{
+#teacher1{
     background: url(../img/tcr1.jpg) no-repeat center center/cover;
 }
-#tcr2-img{
+#teacher2{
     background: url(../img/tcr2.jpg) no-repeat center center/cover;
 }
-#tcr3-img{
+#teacher3{
     background: url(../img/tcr3.jpg) no-repeat center center/cover;
 }
-#tcr4-img{
+#teacher4{
     background: url(../img/tcr4.jpg) no-repeat center center/cover;
 }
+
+/* --------- Responsive Section --------- */

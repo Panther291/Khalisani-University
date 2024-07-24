@@ -1,0 +1,33 @@
+:root {
+    --primary-bg-color: #8EE600;
+    --primary-font-color: #8EE600;
+    --secondary-font-color: #ffffff;
+    --secondary-bg-color: #ffffff;
+    --secondary-border-color: #ffff00df;
+    --colored-bg: #f4ffe3;
+    --white-colored-bg: #ffffff;
+    --white-bg: #ffffff1;
+    --font1: arial;
+    --font-color3: #b5d383;
+}
+
+@media screen and (max-width: 604px) {
+    #heading {
+        justify-content: center;
+        background-color: var(--primary-bg-color);
+        height: 60px;
+        padding: 10px 0;
+    }
+
+    #heading-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    #heading-ul li {
+        padding: 5px;
+    }
+
+    
+}
