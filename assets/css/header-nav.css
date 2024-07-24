@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-bg-color: #8ee600;
+    --primary-font-color: #8EE600;
+    --secondary-font-color: #ffffff;
+    --secondary-bg-color: #ffffff;
+    --secondary-border-color: #ffff00df;
+    --colored-bg: #f4ffe3;
+    --white-colored-bg: #ffffff;
+    --white-bg: #ffffff1;
+    --font1: arial;
+    --font-color3: #b5d383;
+}
+
+html{
+    background-color: var(--secondary-bg-color);
+}
+
+body {
+    min-height: 100vh;
+}
+
+.colored-bg {
+    background-color: var(--colored-bg);
+}
+.white-colored-bg {
+    background-color: var(--white-colored-bg);
+}
+
+.cont-headings {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 60px 0;
+    font-family: var(--font1);
+    color: var(--primary-font-color);
+    font-weight: 600;
+}
+
+/* ------------ Heading Section ------------ */
+
+#heading {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-bg-color);
+    height: 60px;
+    z-index: 100000;
+}
+
+#heading-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.fa-solid fa-building-columns {
+    color: var(--secondary-font-color);
+}
+
+#head-name {
+    color: var(--secondary-font-color);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vw, 1.7rem);
+    font-family: var(--font1);
+}
+
+#heading-ul {
+    display: flex;
+}
+
+#heading-ul li {
+    margin: 0 5px;
+}
+
+#heading-ul li a {
+    padding: 7px 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    font-family: var(--font1);
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+#heading-ul li a:hover {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-font-color);
+}
+
+/* ------------ Navigation Bar Section ------------ */
+
+nav {
+    position: sticky;
+    top: 0;
+    /* border-bottom: 5px solid var(--secondary-border-color);
+    border-top: 5px solid var(--secondary-border-color); */
+    z-index: 100;
+    box-shadow: -1px 7px 25px #0000009a;
+}
+
+nav ul {
+    display: flex;
+    background-color: var(--secondary-bg-color);
+}
+
+nav ul li {
+    padding: 15px 8px;
+}
+
+nav ul li a {
+    font-family: var(--font1);
+    font-weight: bolder;
+    color: var(--primary-font-color);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: all 0.4s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-font-color);
+}
