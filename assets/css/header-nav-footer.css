@@ -127,3 +127,21 @@ nav ul li a:hover {
     background-color: var(--primary-bg-color);
     color: var(--secondary-font-color);
 }
+
+/* --------- Footer Section --------- */
+
+footer{
+    height: 15vh;
+    background-color: var(--primary-font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--secondary-font-color);
+    font-family: var(--font1);
+}
+
+#bold-footer{
+    font-weight: bold;
+    font-style: italic;
+}
