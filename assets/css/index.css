@@ -49,9 +49,9 @@ body {
 #main-img {
     height: 75vh;
     background: url(../img/main.jpeg) no-repeat center center/cover;
-    position: sticky;
-    top: 0;
-    z-index: -100;
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: -100; */
 }
 
 #main-img-name {
@@ -71,9 +71,9 @@ body {
 /* ------------ University Description Section ------------ */
 .uni-desc{
     border-top: 3px solid var(--primary-bg-color);
-    position: sticky;
-    top: 0;
-    z-index: -99;
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: -99; */
 }
 #uni-desc-heading {
     text-align: center;
@@ -102,9 +102,9 @@ body {
     height: 37vh;
     background-color: var(--secondary-bg-color);
     /* border-top: 3px solid var(--primary-bg-color); */
-    position: sticky;
-    top: 0;
-    z-index: -98;
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: -98; */
 }
 
 #chancellor-img {
@@ -369,4 +369,25 @@ body {
     background: url(../img/tcr4.jpg) no-repeat center center/cover;
 }
 
+.hidden-sec {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(30px);
+    /* transition-delay: 0.5s; */
+}
+
+.show-sec {
+    opacity: 1;
+    transition: all 1s;
+    transform: none;
+    filter: blur(0);
+    transition-delay: 0.5s;
+}
+
+/* .scroll-el:nth-child() {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(30px);
+
+} */
 /* --------- Footer Section --------- */
