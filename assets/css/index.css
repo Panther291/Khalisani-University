@@ -373,7 +373,6 @@ body {
     opacity: 0;
     transform: translateX(-100%);
     filter: blur(30px);
-    transition-delay: 0.5s;
 }
 
 .show-sec {
